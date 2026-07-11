@@ -3,9 +3,11 @@ import pandas as pd
 import os
 from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
+#from langchain.agents import create_react_agent
+#from langchain.agents import AgentExecutor
+from ferramentas import criar_ferramentas
 from langchain.agents import create_react_agent
 from langchain.agents import AgentExecutor
-from ferramentas import criar_ferramentas
 
 # Inicia o app
 st.set_page_config(page_title="Assistente de análise de dados com IA", layout="centered")
