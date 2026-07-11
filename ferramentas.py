@@ -10,6 +10,8 @@ import seaborn as sns
 import streamlit as st
 from langchain.agents import Tool
 from langchain_experimental.tools import PythonAstREPLTool
+from langchain.agents import create_react_agent
+from langchain.agents import AgentExecutor
 
 # Obtenção da chave de api
 load_dotenv()
