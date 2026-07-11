@@ -13,10 +13,12 @@ from langchain_experimental.tools import PythonAstREPLTool
 from langchain.agents import create_react_agent
 from langchain.agents import AgentExecutor
 
-# Obtenção da chave de api
-load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+
+# Obtenção da chave de api
+#load_dotenv()
+#GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 # Configurações do LLM
 llm = ChatGroq(
     api_key=GROQ_API_KEY,
